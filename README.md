@@ -98,3 +98,19 @@ There are 50,000 validation images, 1,421,253 training images.
 Each face in the original image has a resolution of minimum: 
 
 ![](media/face_size_chart.png)
+
+## Citation
+If you find the dataset useful, please cite the following:
+```
+@InProceedings{10.1007/978-3-030-33720-9_44,
+author="Hukkel{\aa}s, H{\aa}kon
+and Mester, Rudolf
+and Lindseth, Frank",
+title="DeepPrivacy: A Generative Adversarial Network for Face Anonymization",
+booktitle="Advances in Visual Computing",
+year="2019",
+publisher="Springer International Publishing",
+pages="565--578",
+isbn="978-3-030-33720-9"
+}
+```
