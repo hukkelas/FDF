@@ -63,6 +63,25 @@ python download.py --target_directory data/fdf --download_images
 For each face in the dataset, follows the following metainfo:
 
 ```
+{
+    "0": { // FDF image index
+        "author": "flickr_username",
+        "bounding_box": [], # List with 4 eleemnts [xmin, ymin, xmax, ymax] indicating the bounding box of the face in the FDF image. In range 0-1.
+        "category": "validation", # validation or training set
+        "date_crawled": "2019-3-6", 
+        "date_taken": "2010-01-16 21:47:59.0",
+        "date_uploaded": "2010-01-16",
+        "landmark": [], # List with shape (7,2). Each row is (x0, y0) indicating the position of the landmark. Landmark order: [nose, r_eye, l_eye, r_ear, l_ear, r_shoulder, l_shoulder]. In range 0-1.
+        "license": "Attribution-NonCommercial License",
+        "license_url": "http://creativecommons.org/licenses/by-nc/2.0/",
+        "original_bounding_box": [], # List with 4 eleemnts [xmin, ymin, xmax, ymax] indicating the bounding box of the face in original image from flickr.
+        "original_landmark": [], # Landmark from the original image from flickr. List with shape (7,2). Each row is (x0, y0) indicating the position of the landmark. Landmark order: [nose, r_eye, l_eye, r_ear, l_ear, r_shoulder, l_shoulder]
+        "photo_title": "original_photo_name", # Flickr photo title
+        "photo_url": "http://www.flickr.com/photos/.../", # Original image URL
+        "yfcc100m_line_idx": "0" # The Line index from the YFCC-100M dataset
+    },
+    ....
+}
 ```
 
 ## Statistics
